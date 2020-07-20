@@ -9,4 +9,4 @@ def zap_blank_lines(text):
     if not text:  # Early out return empty text
         return ""
     non_blanks = (line for line in text.splitlines() if not line.isspace())
-    return f"{'\n'.join(non_blanks)}\n"
+    return '\n'.join(non_blanks) + '\n'
