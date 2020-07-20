@@ -21,3 +21,9 @@ def test_main_nok_ints():
     message = r"'list' object has no attribute 'splitlines'"
     with pytest.raises(AttributeError, match=message):
         do.zap_blank_lines([1, 2, 3])
+
+
+def test_main_nok_int():
+    message = r"'int' object has no attribute 'splitlines'"
+    with pytest.raises(AttributeError, match=message):
+        do.zap_blank_lines(42)
