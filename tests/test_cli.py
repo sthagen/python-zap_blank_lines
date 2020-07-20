@@ -13,7 +13,7 @@ def test_main_ok_same_chars_in_string():
     assert cli.main("a a a a") is None
 
 
-def test_main_ok_empty string():
+def test_main_ok_empty_string():
     assert cli.main('') is None
 
 
