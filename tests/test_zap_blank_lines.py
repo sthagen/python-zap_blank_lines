@@ -15,3 +15,9 @@ def test_main_ok_same_chars_in_string():
 
 def test_main_ok_empty_string():
     assert do.zap_blank_lines('') == ''
+
+
+def test_main_nok_ints():
+    message = r"'list' object has no attribute 'splitlines'"
+    with pytest.raises(AttributeError, match=message):
+        do.zap_blank_lines([1, 2, 3])
