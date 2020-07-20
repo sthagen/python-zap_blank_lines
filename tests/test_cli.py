@@ -13,6 +13,10 @@ def test_main_ok_same_chars_in_string():
     assert cli.main("a a a a") is None
 
 
+def test_main_ok_empty string():
+    assert cli.main('') is None
+
+
 def test_main_nok_ints():
     message = r"'int' object has no attribute 'splitlines'"
     with pytest.raises(AttributeError, match=message):
