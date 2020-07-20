@@ -11,3 +11,7 @@ def test_main_ok_string():
 
 def test_main_ok_same_chars_in_string():
     assert do.zap_blank_lines("a a a a") == 'a a a a\n'
+
+
+def test_main_ok_empty_string():
+    assert do.zap_blank_lines('') == ''
