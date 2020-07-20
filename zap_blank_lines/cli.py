@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 # pylint: disable=line-too-long
 """Remove blank and empty lines."""
-import os
 import sys
 
 from zap_blank_lines.zap_blank_lines import zap_blank_lines
