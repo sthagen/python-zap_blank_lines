@@ -18,7 +18,7 @@ def test_main_ok_empty_string():
 
 
 def test_main_ok_empty_line():
-    assert do.zap_blank_lines('\n') == '\n'
+    assert do.zap_blank_lines('\n') == ''
 
 
 def test_main_ok_two_empty_lines():
