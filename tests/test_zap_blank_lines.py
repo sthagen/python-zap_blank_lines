@@ -29,6 +29,10 @@ def test_main_ok_two_space_only_lines():
     assert do.zap_blank_lines(' \n  \n') == ''
 
 
+def test_main_ok_text_framed_ny_two_space_only_lines():
+    assert do.zap_blank_lines(' \ntext\n  \n') == 'text'
+
+
 def test_main_nok_ints():
     message = r"'list' object has no attribute 'splitlines'"
     with pytest.raises(AttributeError, match=message):
