@@ -22,7 +22,11 @@ def test_main_ok_empty_line():
 
 
 def test_main_ok_two_empty_lines():
-    assert do.zap_blank_lines('\n\n') == '\n\n'
+    assert do.zap_blank_lines('\n\n') == '\n'
+
+
+def test_main_ok_two_space_only_lines():
+    assert do.zap_blank_lines(' \n  \n') == '\n'
 
 
 def test_main_nok_ints():
